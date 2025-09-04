@@ -15,4 +15,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy with Vercel CLI
-        run: npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --yes --scope ${{ secrets.VERCEL_ORG_ID }} --confirm --project ${{ secrets.VERCEL_PROJECT_ID }}
+        run: npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --yes --scope ${{ secrets.VERCEL_ORG_ID }} --confirm
